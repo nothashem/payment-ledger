@@ -1,0 +1,77 @@
+{
+    "accounts": {
+      "cash": {
+        "USD": {
+          "account_name": "Cash - USD",
+          "account_type": "Asset",
+          "nature": "Debit",
+          "currency": "USD"
+        },
+        "EUR": {
+          "account_name": "Cash - EUR",
+          "account_type": "Asset",
+          "nature": "Debit",
+          "currency": "EUR"
+        },
+        "GBP": {
+          "account_name": "Cash - GBP",
+          "account_type": "Asset",
+          "nature": "Debit",
+          "currency": "GBP"
+        }
+      },
+      "revenue": {
+        "transaction_fees": {
+          "account_name": "Transaction Fee Revenue",
+          "account_type": "Revenue",
+          "nature": "Credit",
+          "currency": "USD"
+        },
+        "fx_fees": {
+          "account_name": "FX Fee Revenue",
+          "account_type": "Revenue",
+          "nature": "Credit",
+          "currency": "USD"
+        }
+      },
+      "expense": {
+        "payment_processing": {
+          "account_name": "Payment Processing Expense",
+          "account_type": "Expense",
+          "nature": "Debit",
+          "currency": "USD"
+        }
+      }
+    },
+    "fx_fees": {
+      "USD": {
+        "EUR": 0.01,
+        "GBP": 0.01
+      },
+      "EUR": {
+        "USD": 0.01,
+        "GBP": 0.01
+      },
+      "GBP": {
+        "USD": 0.01,
+        "EUR": 0.01
+      }
+    },
+    "transaction_fee_percentage": 0.029,
+    "transaction_fee_fixed": {
+      "USD": 0.30,
+      "EUR": 0.25,
+      "GBP": 0.20
+    },
+    "exchange_rates": {
+      "base": "USD",
+      "rates": {
+        "EUR": 0.92,
+        "GBP": 0.79,
+        "USD": 1
+      }
+    },
+    "payment_processing": {
+      "expense_percentage": 0.3  
+    }
+  }
